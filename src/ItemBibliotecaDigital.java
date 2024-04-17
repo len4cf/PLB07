@@ -1,7 +1,13 @@
 public abstract class ItemBibliotecaDigital {
-    private String titulo;
+    protected String titulo;
+    protected String autor;
 
-    public void descricao() {
-        System.out.println("descrição do item");
+    public ItemBibliotecaDigital() {
+
     }
+
+    public abstract String descricao(String titulo, String autor);
+
+
+
 }
